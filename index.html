@@ -1,0 +1,56 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulary</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Form</h1>
+    </header>
+
+    <div id="main-box">
+        <div class="info-block">
+            <input type="text" id="name" placeholder="First Name">
+            <span> &nbsp; &nbsp;</span>
+            <input type="text" id="last-name" placeholder="Last Name">
+        </div>
+
+        <div class="info-block">
+            <span>Sexo:</span>
+            <select name="sex" id="sex">
+                <option value="ini">...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <span>Birthday:</span>
+            <input type="date" id="birth-day" min="1900-01-1" value="2020-01-01">
+        </div>
+
+        <div class="info-block">
+            <input type="text" id="country" placeholder="country">
+            <span> &nbsp; &nbsp;</span>
+            <input type="number" id="phone" placeholder="phone ex:98995095126">
+        </div>
+
+
+        <div class="info-block">
+            <input type="checkbox" id="term-chk" checked>
+            <span>I read and agree</span>
+        </div>
+
+        <div class="button-block">
+            <button onclick="sendInfo()">Send</button>
+            <button onclick="clean()">Clear</button>
+        </div>
+        
+
+    </div>
+        <div>
+            <p style="color: white; font: normal 12px monospace;">MasterCliff</p>
+        </div>
+
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
