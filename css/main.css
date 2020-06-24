@@ -1,19 +1,34 @@
 body{
+    display: flex;
+    flex-direction: column;
+    
     text-align: center;
+    
     margin: auto;
+
     background-color: rgb(30, 70, 204);
+    
 }
 
 header{
+    height: 70px;
+    justify-content: center;
+    display: inline-block;
+
     text-align: center;
-    display: block;
+
     background-color: rgb(255, 255, 255);
-    height: 10%;
+    
+    box-shadow: 2px 0px 10px 10px rgba(0, 0, 0, 0.37);
 }
 
 #title{
-    font: italic 42px arial;
-    color: rgba(0, 0, 0, 0.63);
+    margin-top: 10px;
+
+    font-size: 42px;
+    font-family: 'Ubuntu', 'Roboto';
+    
+    color: rgba(0, 0, 0, 0.808);
 }
 
 
@@ -30,57 +45,89 @@ input[type=number] {
 
 
 input{
-    background-color: transparent;
-    height: 30px;
+    height: 40px;
+    width: 200px;
+
+    background-color: rgba(114, 173, 180, 0.4);
+
     outline: none;
+
     border: none;
-    border-bottom: solid 1px rgba(30, 71, 204, 0.514);   
-    font: normal 16px sans-serif;
+    border-bottom: solid 3px rgba(30, 71, 204, 0.514);
+    border-radius: 0.2em;
+    
+    font: normal 16px 'Roboto';
+
     margin-right: auto;
     transition: all 0.4s;
     
 }
 input:hover{
-    border-bottom: solid 1px rgb(30, 70, 204);
+    border-bottom-color: rgb(30, 70, 204);
 }
 
 span{
     color: rgba(0, 0, 0, 0.575);
-    font: normal 15px sans-serif;
+    font: normal 15px 'Roboto';
 }
 
 select{
-    background-color: transparent;
-    height: 30px;
-    font: normal 15px sans-serif;
+    background-color: rgba(114, 173, 180, 0.4);
+    
+    width: 200px;
+    height: 40px;
+    
+    font: normal 15px 'Roboto';
+
+    border: none;
+    border-bottom: solid 3px rgba(30, 71, 204, 0.514);
+    border-radius: 0.2em;
+
+    outline: none;
 }
 
 button{
-    margin-left: 6px;
-    color: white;
-    background-color:rgb(30, 70, 204);
-    border: solid 1px transparent;
-    border-radius: 0.4em;
-    cursor: pointer;
-    outline: none;
     width: 130px;
     height: 40px;
+
+    color: white;
+    background-color:rgb(30, 70, 204);
+
+    border: solid 1.5px transparent;
+    border-radius: 0.2em;
+
+    cursor: pointer;
+    outline: none;
+
+    font: bold 14px 'Roboto';
+
+    margin-left: 6px;
+
+}
+
+button:hover{
+    background-color: transparent;
+    color: black;
+
+    border-color:rgb(30, 70, 204);
 }
 
 #main-box{
-    background-color: #fff;
+    height: 450px;
     display: inline-block;
-    width: 50%;
-    height: 80%;
-    margin-top: 1%;
+
+    background-color: #fff;
+    
+    margin: 2% 20% 0 20%;
+
     border-radius: 0.4em;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .info-block{
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 .button-block{
-    position:relative;
-    bottom: -20%;
+    margin-top: 20px;
 }

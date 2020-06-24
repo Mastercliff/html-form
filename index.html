@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Form</h1>
+        <div id="title">HTML Form</div>
     </header>
 
     <div id="main-box">
@@ -17,14 +17,12 @@
         </div>
 
         <div class="info-block">
-            <span>Sexo:</span>
             <select name="sex" id="sex">
-                <option value="ini">...</option>
+                <option value="none">Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
-            <span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
-            <span>Birthday:</span>
+            <span> &nbsp; &nbsp;</span>
             <input type="date" id="birth-day" min="1900-01-1" value="2020-01-01">
         </div>
 
@@ -36,13 +34,13 @@
 
 
         <div class="info-block">
-            <input type="checkbox" id="term-chk" checked>
+            <input style="height: 20px; width: 20px;" type="checkbox" id="term-chk" checked>
             <span>I read and agree</span>
         </div>
 
         <div class="button-block">
             <button onclick="sendInfo()">Send</button>
-            <button onclick="clean()">Clear</button>
+            <button style="background-color: rgb(223, 77, 77); color: white;" onclick="clean()">Clear</button>
         </div>
         
 
