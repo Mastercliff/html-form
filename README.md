@@ -1,5 +1,5 @@
 # Form
-<img src="./form.png" alt="form" width="200"/>
+<img src="./form.png" alt="form"/>
 
 This is a database test form and can be readjusted as needed
 
